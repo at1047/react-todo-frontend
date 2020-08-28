@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Label, FormGroup, Input, Table, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-const url = 'http://localhost:5000'
+const url = `http://${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}`
+console.log(url)
 
 class App extends Component {
     state = {
